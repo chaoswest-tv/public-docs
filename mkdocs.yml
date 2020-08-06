@@ -16,12 +16,16 @@ theme:
 markdown_extensions:
   - admonition
   - def_list
+  - footnotes
   - codehilite:
       guess_lang: false
   - toc:
       permalink: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
   - search
@@ -31,5 +35,11 @@ plugins:
 
 nav:
   - Home: index.md
+  - Streaming:
+    - Overview: streaming/index.md
+    - '"The Cluster"':
+      - Overview: streaming/cluster/index.md
+      - Architecture: streaming/cluster/architecture.md
+      - Attributions: streaming/cluster/attributions.md
   - Meta:
       Publishing: meta/publishing.md
