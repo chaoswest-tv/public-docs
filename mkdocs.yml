@@ -41,5 +41,7 @@ nav:
       - Overview: streaming/cluster/index.md
       - Architecture: streaming/cluster/architecture.md
       - Attributions: streaming/cluster/attributions.md
+      - HLS CDN:
+        - Architecture: streaming/cluster/hlscdn/architecture.md
   - Meta:
       Publishing: meta/publishing.md
