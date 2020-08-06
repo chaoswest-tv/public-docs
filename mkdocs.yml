@@ -1,0 +1,35 @@
+site_name: Chaos-West TV Documentation
+site_description: Streaming Nerds to your TV!
+site_author: Chaos-West TV
+repo_url: https://github.com/chaoswest-tv/public-docs
+
+theme:
+  name: material
+  palette:
+    scheme: preference
+    primary: green
+    accent: yellow
+  logo: https://raw.githubusercontent.com/chaoswest-tv/chaoswest-grafik/master/logos/chaoswest-tv.svg
+  features:
+    - tabs
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - drawio-exporter
+  - git-revision-date-localized:
+      type: iso_datetime
+
+nav:
+  - Home: index.md
+  - Meta:
+      Publishing: meta/publishing.md
